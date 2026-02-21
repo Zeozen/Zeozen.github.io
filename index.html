@@ -1,89 +1,59 @@
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
-	</head>
-	
-	<body>
-	<main class="main_text">
-	  <!-- wrap each letter in a span for the wave -->
-	  <span>w</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-	  <span> </span>
-	  <span>t</span><span>o</span>
-	  <span> </span>
-	  <span>t</span><span>h</span><span>e</span>
-	  <span> </span>
-	  <span>g</span><span>a</span><span>r</span><span>d</span><span>e</span><span>n</span>
-	  <br>
-	  <span>t</span><span>h</span><span>e</span><span>r</span><span>e</span>'<span>s</span>
-	  <span> </span><span>n</span><span>o</span><span>t</span>
-	  <span> </span><span>m</span><span>u</span><span>c</span><span>h</span>
-	  <span> </span><span>h</span><span>e</span><span>r</span><span>e</span>
-	  <span> </span><span>y</span><span>e</span><span>t</span><span>.</span><span>.</span><span>.</span>
-	  <br>
-	  <span>m</span><span>a</span><span>y</span><span>b</span><span>e</span>
-	  <span> </span><span>s</span><span>o</span><span>m</span><span>e</span><span>t</span><span>h</span><span>i</span><span>n</span><span>g</span>
-	  <span> </span><span>w</span><span>i</span><span>l</span><span>l</span>
-	  <span> </span><span>g</span><span>r</span><span>o</span><span>w</span><span>?</span>
-	</main>
-	</body>
-	
-	<style>
-	body {
-	  margin: 0;
-	  height: 100vh;
-	  display: grid;
-	  place-items: center;
-	  text-align: center;
-	
-	  background: radial-gradient(circle, #71bd75 0%, #94d966 57%, #e8e09b 100%);
-	  background-size: cover;
-	  position: relative;
-	  overflow: hidden;
-	}
-	
-	body::before {
-	  content: "";
-	  position: fixed;
-	  top: 0; left: 0; right: 0; bottom: 0;
-	  background: radial-gradient(circle, #78cd82 0%, #a0e678 57%, #f0e6a0 100%);
-	  z-index: -1;
-	  animation: fade 8s infinite alternate;
-	  opacity: 0;
-	}
-	
-	@keyframes fade {
-	  0%   { opacity: 0; }
-	  50%  { opacity: 1; }
-	  100% { opacity: 0; }
-	}
-	
-	.main_text {
-		font-family: "Jacquard 12", system-ui;
-		font-weight: 400;
-		font-style: normal;
-		color: #fff8c0;
-	
-	  font-size: 4rem; /* doubled size */
-	  line-height: 1.2em;
-	}
-	
-	.main_text span {
-	  display: inline-block;
-	  animation: wave 2s infinite ease-in-out;
-	}
-	
-	.main_text span:nth-child(odd) { animation-delay: 0s; }
-	.main_text span:nth-child(even) { animation-delay: 0.25s; }
-	
-	@keyframes wave {
-	  0%, 100% { transform: translateY(0px); }
-	  50%       { transform: translateY(-10px); } /* bigger wave for larger text */
-	}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="style.css">
+<script src="script.js"></script> -->
+</head>
 
-	/* Apply custom selection colors */
-::selection {
-  background: rgba(255, 255, 200, 0.5); /* soft yellow highlight */
-  color: #1e3f27; /* dark green text while selected */
+<title>zeozen.garden</title>
+
+<body>
+<div class="centered_rect">
+<main class="main_text">
+<p>welcome to the garden<br>there's not a lot here yet<br>maybe something will grow?</p>
+<button onclick="window.location.href='gallery.html'">View Gallery</button>
+</main>
+</div>
+</body>
+
+<script>
+// script goes here
+</script>
+
+<style>
+
+body {
+	background: radial-gradient(circle, #ceb487 0%, #dda572 100%);
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
 }
-	</style>
+
+.main_text {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+min-height: 100vh;
+}
+
+.centered_rect {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.main_text {
+font-family: "Jacquard 12", system-ui;
+font-weight: 400;
+font-style: normal;
+color: #556409;
+font-size: 3rem;
+}
+
+</style>
+
