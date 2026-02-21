@@ -12,7 +12,8 @@
 <div class="centered_rect">
 <main class="main_text">
 <p>welcome to the garden<br>there's not a lot here yet<br>maybe something will grow?</p>
-<button onclick="window.location.href='gallery.html'">View Gallery</button>
+<button onclick="window.location.href='gallery/index.html'">View Gallery</button>
+<button onclick="window.location.href='journal/index.html'">View Journal</button>
 </main>
 </div>
 </body>
@@ -28,6 +29,10 @@ body {
 	margin: 0;
 	height: 100vh;
 	overflow: hidden;
+	cursor:  url('res/cur_point.png') 0 0, auto;
+	main button:hover, main button:focus {
+		cursor:  url('res/cur_point.png') 0 0, auto;
+	}
 }
 
 .main_text {
