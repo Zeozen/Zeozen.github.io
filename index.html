@@ -1,7 +1,12 @@
+<!-- todo: page for links to cool websites and resources: library -->
+<!-- todo: page for listening to music -->
+<!-- todo: page for small games -->
+
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <!-- <link rel="stylesheet" href="style.css">
 <script src="script.js"></script> -->
 </head>
@@ -9,7 +14,9 @@
 <title>zeozen.garden</title>
 
 <body>
-<div class="centered_rect">
+	<div class="centered_rect">
+		<div>sessions: <span id="visit-counter">0</span></div>
+		<script src="./code/page_count.js"></script>
 <main class="main_text">
 <p>welcome to the garden<br>there's not a lot here yet<br>maybe something will grow?</p>
 <button onclick="window.location.href='gallery'">View Gallery</button>
@@ -61,4 +68,3 @@ font-size: 3rem;
 }
 
 </style>
-
