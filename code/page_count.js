@@ -35,3 +35,6 @@ document.getElementById('btn-gallery').addEventListener('click', () => {
 document.getElementById('btn-journal').addEventListener('click', () => {
 	window.location.href = 'journal';
 });
+document.getElementById('btn-library').addEventListener('click', () => {
+	window.location.href = 'library';
+});
