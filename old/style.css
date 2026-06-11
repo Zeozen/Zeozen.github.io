@@ -1,0 +1,82 @@
+/* Root setup */
+html, body {
+  height: 100%;        /* ensure children can fill viewport */
+  margin: 0;           /* remove default browser margin */
+  padding: 0;          /* optional, remove padding */
+  overflow: hidden;    /* disable scrolling */
+}
+
+/* Base styling */
+body {
+  font-family: "Jacquard 12", system-ui;
+  color: #556409;              /* default text color */
+  background: radial-gradient( #FFBC92 0%, #FFBC92 100%);
+  box-shadow: inset 0 0 100px 40px #EDC0A0;
+  cursor: url('res/cur_point.png') 0 0, auto;
+
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  border: 64px solid transparent;
+  border-image: url(./res/border_b.png) 32 stretch;
+  image-rendering: -webkit-pixelated; /* Chrome/Safari */
+  image-rendering: pixelated;         /* Firefox/Opera */
+  image-rendering: crisp-edges;       /* Standard/Edge */
+  box-sizing: border-box;
+}
+
+.contents{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: 50px solid transparent;
+    border-image: url(./res/border_a.png) 32 stretch;
+    image-rendering: -webkit-pixelated; /* Chrome/Safari */
+    image-rendering: pixelated;         /* Firefox/Opera */
+    image-rendering: crisp-edges;       /* Standard/Edge */
+}
+
+
+/* debug outline */
+/* * {
+  outline: 1px dashed rgba(0, 128, 255, 0.5);
+  outline-offset: -1px;
+} */
+
+.main_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+
+	font-weight: 400;
+	font-style: normal;
+
+	font-size: 3rem;
+}
+
+.nav {
+    width: 100%;
+    background: #71bd75;
+    background: linear-gradient(0deg, rgba(113, 189, 117, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.centered_rect {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+button:hover, button:focus {
+	cursor: url('res/cur_point.png') 0 0, auto;
+}
