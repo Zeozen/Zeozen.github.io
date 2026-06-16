@@ -27,6 +27,11 @@ static struct gallery_book gallery_books[] =
 		"Notes and sketches from Riven playthrough",
 	},
 	{
+		"myst3",
+		"Myst 3 Journal",
+		"Notes and sketches from Myst 3: Exile playthrough",
+	},
+	{
 		"vintagestory",
 		"Vintage Story Journal",
 		"Sketches from adventures in Vintage Story",
@@ -87,7 +92,7 @@ static void gallery_scan_book(struct gallery_book *book)
     char dir[512];
     char pattern[512];
 
-    snprintf(dir,     sizeof(dir),     "output/res/gallery/%s", book->id);
+    snprintf(dir,     sizeof(dir),     "../docs/res/gallery/%s", book->id);
     snprintf(pattern, sizeof(pattern), "%s/*", dir);
 
     WIN32_FIND_DATAA find;
