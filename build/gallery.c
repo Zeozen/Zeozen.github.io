@@ -17,9 +17,9 @@ struct gallery_book
 static struct gallery_book gallery_books[] =
 {
 	{
-		"inktober",
-		"Inktober",
-		"Ink drawings from various inktober challenges",
+		"inked",
+		"Watercolor and Ink",
+		"Ink and watercolor pieces from Inktobers and more",
 	},
 	{
 		"riven",
