@@ -32,6 +32,11 @@ static struct gallery_book gallery_books[] =
 		"Notes and sketches from Myst 3: Exile playthrough",
 	},
 	{
+		"myst4",
+		"Myst 4 Journal",
+		"Notes and sketches from Myst 4: Revelation playthrough",
+	},
+	{
 		"vintagestory",
 		"Vintage Story Journal",
 		"Sketches from adventures in Vintage Story",
